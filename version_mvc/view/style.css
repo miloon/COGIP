@@ -1,0 +1,27 @@
+body{
+  font-family: monospace;
+  color: black;
+}
+h1, h2, h3{
+  font-family: 'VT323', monospace;
+  color: #00D600;
+}
+a{
+  color: #0001F9;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  border-top: solid 1px #00D600;
+}
+.nav-tabs{
+  border-bottom: solid 1px #00D600;
+  font-size: 1.2em;
+}
+.jumbotron{
+  background-color: #00D600;
+  color: #FFF;
+}
+.nav-tabs>li>a:hover{
+  background-color: #00D600;
+  color: #FFF;
+  border: solid 1px #00D600;
+}
