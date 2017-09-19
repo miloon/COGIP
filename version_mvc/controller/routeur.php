@@ -49,5 +49,6 @@ if(empty($_GET)){ // pas de variables get => ACCUEIL
   // rien n'est juste, on retourne à l'accueil
 }else{ // si ce que l'utilisateur fait ne correspond à aucun des cas ci-dessus,
   // alors par défaut, le navigateur affichera la page d'accueil.
-  require_once 'accueil.php';
+  require_once 'model/accueil.php';
+  require_once 'view/accueil.php';
 }
