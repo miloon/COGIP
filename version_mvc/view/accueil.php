@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
   <?php include("header.php");?>
-  <title>Bienvenue à la COGIP</title>
-</head>
-<body>
-  <div class="container">
-  <!--Menu de navigation-->
-  <?php include("menu.php");?>
   <!--Contenu-->
   <h1>Bienvenue dans le système de facturation de la COGIP</h1>
     <p>Bonjour Jean-Christian !<br/>Voici les dernières entrées.</p>
@@ -60,6 +51,4 @@
       </tr>
     <?php } ?>
   </table>
-</div>
-</body>
-</html>
+  <?php include("footer.php");?>

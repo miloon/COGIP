@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
   <?php include("header.php");?>
-  <title><?=$titre?></title>
-</head>
-<body><div class="container">
-  <!--Menu de navigation-->
-  <?php include("menu.php");?>
   <!--Contenu-->
+  <?php
+  // si quelqu'un bidouille dans l'URL pour avoir accès à un autre ID mais que la facture/ID n'existe pas, on prévoit le cas en générant un message d'erreur.
+  if(isset($erreur)){?>
+    <h2><?=$erreur?></h2>
+  <?php }else{ // si l'ID existe, alors on affiche les informations relatives à celui-ci
+    ?>
   <h2>Information facture n°<?=$invoice['numero_facture']?> en date du <?=date("d/m/Y", strtotime($invoice['date_facture']))?></h2>
   <div class="col-md-6">
     <h3>Société liée à la facture</h3>
@@ -39,6 +37,5 @@
       </tr>
     </table>
   </div>
-</div>
-</body>
-</html>
+  <?php }
+  include("footer.php");?>

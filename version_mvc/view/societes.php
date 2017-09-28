@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
   <?php include("header.php");?>
-  <title>COGIP - sociétés</title>
-</head>
-<body><div class="container">
-  <!--Menu de navigation-->
-  <?php include("menu.php");?>
   <!--Contenu-->
   <h1>Annuaire des sociétés</h1>
   <div class="row">
@@ -45,6 +37,4 @@
       </table>
     </div>
   </div>
-</div>
-</body>
-</html>
+  <?php include("footer.php");?>

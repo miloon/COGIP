@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
   <?php include("header.php");?>
-  <title>COGIP - Factures</title>
-</head>
-<body><div class="container">
-  <!--Menu de navigation-->
-  <?php include("menu.php");?>
   <!--Contenu-->
   <h1></h1>
   <h2>Liste des factures</h2>
@@ -26,6 +18,4 @@
       </tr>
     <?php } ?>
   </table>
-</div>
-</body>
-</html>
+  <?php include("footer.php");?>

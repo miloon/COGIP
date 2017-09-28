@@ -7,5 +7,10 @@ WHERE factures.fk_societe = societes.id_societe
 AND factures.fk_personne = personnes.id_personne
 AND id_facture = $idfacture";
 $invoice = $pdo->query($query)->fetch();
-$titre = "COGIP - Information facture n° ". $invoice['numero_facture'];
+$title = "COGIP - Information facture n° ". $invoice['numero_facture'];
+// si on n'a pas de facture
+if(empty($invoice['numero_facture'])){
+    // affichage erreur
+    $erreur = "Aucune facture ne correspond à votre requête.";
+}
 ?>

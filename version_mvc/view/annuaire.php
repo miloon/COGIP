@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
   <?php include("header.php");?>
-  <title>COGIP - annuaire</title>
-</head>
-<body>
-  <div class="container">
-  <!--Menu de navigation-->
-  <?php include("menu.php");?>
   <!--Contenu-->
 <div class="row">
   <h2>Annuaire des contacts</h2>
@@ -28,6 +19,4 @@
     <?php } ?>
   </table>
 </div>
-</div>
-</body>
-</html>
+  <?php include("footer.php");?>

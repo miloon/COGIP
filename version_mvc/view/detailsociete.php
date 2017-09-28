@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
   <?php include("header.php");?>
-  <title><?=$titre?></title>
-</head>
-<body><div class="container">
-  <!--Menu de navigation-->
-  <?php include("menu.php");?>
   <!--Contenu-->
+  <?php
+  // si quelqu'un bidouille dans l'URL pour avoir accès à un autre ID mais que la société/ID n'existe pas, on prévoit le cas en générant un message d'erreur.
+  if(isset($erreur)){?>
+    <h2><?=$erreur?></h2>
+  <?php }else{ // si l'ID existe, alors on affiche les informations relatives à celui-ci
+    ?>
   <h2>Société : <?=$societe['nom_societe']?></h2>
   <p>Adresse : <?=$societe['adresse_societe']?></a> | Téléphone : <?=$societe['tel_societe']?></p>
   <p>Numéro de TVA : <?=$societe['tva_societe']?></a> | Type : <?=$societe['type']?></p>
@@ -41,6 +39,5 @@
       </tr>
     <?php } ?>
   </table>
-</div>
-</body>
-</html>
+    <?php }
+    include("footer.php");?>

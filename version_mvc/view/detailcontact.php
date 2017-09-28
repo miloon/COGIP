@@ -1,14 +1,11 @@
-
-<!DOCTYPE html>
-<html>
-<head>
   <?php include("header.php");?>
-  <title><?=$titre?></title>
-</head>
-<body><div class="container">
-  <!--Menu de navigation-->
-  <?php include("menu.php");?>
   <!--Contenu-->
+<?php
+// si quelqu'un bidouille dans l'URL pour avoir accès à un autre ID mais que le contact/ID n'existe pas, on prévoit le cas en générant un message d'erreur.
+if(isset($erreur)){?>
+  <h2><?=$erreur?></h2>
+<?php }else{ // si l'ID existe, alors on affiche les informations relatives à celui-ci
+  ?>
   <h2><?=$contact['nom_personne']?> <?=$contact['prenom_personne']?></h2>
   <p>Société : <a href="?idsociete=<?=$contact['id_societe']?>"><?=$contact["nom_societe"]?></a></p>
   <p><a href="mailto:<?=$contact['email_personne']?>"><?=$contact['email_personne']?></a> | Téléphone : <?=$contact['tel_personne']?></p>
@@ -25,6 +22,5 @@
       </tr>
     <?php } ?>
   </table>
-</div>
-</body>
-</html>
+  <?php }
+  include("footer.php");?>

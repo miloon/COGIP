@@ -13,4 +13,5 @@ $contacts = $stmt->fetchAll();
 $query = 'SELECT * FROM `societes`, type where societes.FK_type = type.id_type order by id_societe desc limit 5';
 $stmt = $pdo->query($query);
 $societes = $stmt->fetchAll();
+$title="Système de facturation de la COGIP";
 ?>
