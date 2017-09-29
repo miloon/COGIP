@@ -2,10 +2,13 @@
 <html>
 <head>
 <meta charset="utf-8">
+<!-- Import Bootstrap -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Custom maison -->
 <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
-<link rel="stylesheet" href="view/style.css">
+<link rel="stylesheet" href="view/css/style.css">
+<!-- Informations et liens à mettre pour respecter les critères de la PWA -->
 <link rel="manifest" href="manifest.json">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -31,6 +34,7 @@
 <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 <meta name="msapplication-TileColor" content="#23527c">
 <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+<!-- Titre généré en fonction de la page chargée -->
 <title><?=$title?></title>
 </head>
 <body><div class="container">
