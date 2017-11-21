@@ -9,11 +9,14 @@
 <div class="row">
 <div class="col-md-offset-1 col-md-10">
   <!-- On prépare un endroit où on va afficher le message d'erreur pour l'utilisateur.-->
-  <?php if(isset($erreur)){?>
+  <?php if(isset($erreur)){ ?>
     <p><?=$erreur?></p>
   <?php }else{
-    ?>
+    if(isset($reponse)){ ?>
+      <p><?=$reponse?></p>
+    <?php }else{ ?>
     <p>Vous ne faites pas encore partie de la COGIP ? Inscrivez-vous dès maintenant !</p>
+    <?php } ?>
     <!-- Formulaire de connexion -->
   <form method="post" action="" class="well form">
     <div class="form-group">
