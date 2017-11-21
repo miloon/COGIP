@@ -1,4 +1,9 @@
 <?php
+/*
+documentation sur php.net pour comprendre ce que font ces fonctions :
+http://php.net/manual/fr/function.password-hash.php
+*/
+
 // si le formulaire n'est pas vide, donc il a été rempli et envoyé :
 if(!empty($_POST)) {
     $lelogin = htmlspecialchars(strip_tags(trim($_POST['lelogin'])),ENT_QUOTES);
