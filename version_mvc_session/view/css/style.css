@@ -1,0 +1,98 @@
+:root {
+	--bleu : #0001F9 ;
+  --bleuclair : #07FDFC;
+  --vert : #00D600;
+  --jaune: #FFFF00;
+	--gris: #2E2E2E;
+}
+
+body{
+  font-family: monospace;
+  color: black;
+  background-color: black;
+}
+.container{
+	background-color: var(--jaune);
+}
+h1, h2, h3{
+  font-family: 'VT323', monospace;
+  color: var(--gris);
+}
+a{
+  color: var(--bleu);
+}
+a:hover{
+  color: var(--bleuclair);
+}
+.text-muted {
+    color: var(--jaune);
+		margin:0;
+}
+.btn-success {
+    color: #fff;
+    background-color: var(--bleu);
+    border-color: var(--bleu);
+}
+.btn-success:hover {
+    color: var(--bleu);
+    background-color: var(--bleuclair);
+    border-color: var(--bleuclair);
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  border-top: solid 1px #00D600;
+}
+
+.container .jumbotron{
+  background-color: var(--vert);
+  color: #FFF;
+  border-radius: 0px;
+}
+.footer, .container-fluid{
+  background-color: var(--bleu);
+  border-radius: 0px;
+}
+.navbar{
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+}
+.navbar-default .navbar-collapse{
+  background-color: var(--bleu);
+  font-size: 1.2em;
+}
+.navbar-default .navbar-nav > li > a{
+  color: white;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
+  background-color: var(--vert);
+  color: #FFF;
+}
+.navbar-default .navbar-brand{
+  color: #FFF;
+}
+.navbar-default .navbar-brand:hover{
+  color: var(--vert);
+}
+.navbar-default .navbar-toggle:hover {
+    background-color: var(--vert);
+}
+.navbar-default .navbar-toggle {
+    border-color: #FFF;
+}
+.well{
+	background-color: var(--bleuclair);
+	border: 1px solid var(--bleu);
+	border-radius: 0px;
+}
+.footer{
+	position: relative;
+	bottom: 0;
+	line-height: 30px;
+	padding: 10px;
+}
+.fa-trash-o{
+	color:var(--bleu);
+}
+.fa-trash-o:hover{
+	color:var(--bleuclair);
+}
