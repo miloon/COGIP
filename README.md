@@ -15,6 +15,7 @@ Dans chaque fichier, des commentaires avec des explications pour comprendre quoi
 Deux versions de l'application :
 - une [version simple sans MVC](version_no_mvc)
 - une [version avec MVC simpliste](version_mvc) (pour comprendre la base des bases)
+- une [version avec MVC simpliste et une administration avec CRUD basique](version_mvc_admin)
 
 Dans un premier temps, il a été demandé aux stagiaires de réalisé un site avec les connaissances qu'ils avaient. Puis, il leur a été demandé de modifier l'architecture de l'application en respectant les principes de base du MVC, histoire de dédiaboliser le concept et de leur montrer que finalement, c'est pas compliqué.
 
@@ -22,5 +23,8 @@ Dans un premier temps, il a été demandé aux stagiaires de réalisé un site a
 
 Dans chaque version, il y a un fichier ``cogip.sql`` qui contient la structure et les données de la base de données qui s'appelle cogip. Dans la version_no_mvc, le fichier se trouve à la racine. Dans la version_mvc, il se trouve dans le dossier model.
 
-## Ce qu'il n'y a pas dans ce repo
-Pour le moment, il n'y a pas de d'administration, donc pas de session.
+## Ce qu'il n'y a pas (encore) dans ce repo
+- plus de commentaires et éventuellement des liens vers des ressources
+- un système de tri pour les tableaux (je ne sais pas encore avec quelle techno, peut-être Angula)
+- un script pour sanitizer les dates en php
+- système de session avec autorisations différentes (droits d'administration) selon l'utilisateur connecté
