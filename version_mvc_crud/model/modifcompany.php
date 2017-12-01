@@ -1,4 +1,7 @@
 <?php
+/*
+https://github.com/becodeorg/BeCode/wiki/Backend---traiter-un-formulaire
+*/
 $query = "SELECT * FROM societes, type
 WHERE type.id_type = societes.fk_type AND id_societe = $idsociete";
 $societe = $pdo->query($query)->fetch();

@@ -1,54 +1,70 @@
 :root {
-	--bleu : #0001F9 ;
-  --bleuclair : #07FDFC;
-  --vert : #00D600;
-  --jaune: #FFFF00;
-	--gris: #2E2E2E;
+	--un: #022B3A;
+	--deux: #1F7A8C;
+	--trois: #843B62;
+	--quatre: #F67E7D;
+	--cinq: #F3E8EE;
+
+	--font: 'Slabo 27px', serif;
 }
 
 body{
-  font-family: monospace;
+  font-family: sans-serif;
   color: black;
-  background-color: black;
+  background-color: var(--cinq);
 }
 .container{
-	background-color: var(--jaune);
+	background-color: white;
+	border: var(--trois) solid 1px;
 }
 h1, h2, h3{
-  font-family: 'VT323', monospace;
-  color: var(--gris);
+  font-family: var(--font);
+  color: var(--trois);
 }
 a{
-  color: var(--bleu);
+  color: var(--deux);
 }
 a:hover{
-  color: var(--bleuclair);
+  color: var(--trois);
+}
+footer{
+	background-color: var(--cinq);
 }
 .text-muted {
-    color: var(--jaune);
+    color: var(--trois);
 		margin:0;
 }
 .btn-success {
     color: #fff;
-    background-color: var(--bleu);
-    border-color: var(--bleu);
+    background-color: var(--deux);
+    border-color: var(--un);
 }
 .btn-success:hover {
-    color: var(--bleu);
-    background-color: var(--bleuclair);
-    border-color: var(--bleuclair);
+    color:  var(--deux);
+    background-color: var(--cinq);
+    border-color: var(--deux);
+}
+.btn-danger {
+    color: #fff;
+    background-color: var(--quatre);
+    border-color: var(--trois);
+}
+.btn-danger:hover {
+    color: var(--quatre);
+    background-color: var(--cinq);
+    border-color: var(--quatre);
 }
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
-  border-top: solid 1px #00D600;
+  border-top: solid 1px var(--quatre);
 }
 
 .container .jumbotron{
-  background-color: var(--vert);
-  color: #FFF;
+  background-color: var(--cinq);
+  color: var(--trois);
   border-radius: 0px;
 }
 .footer, .container-fluid{
-  background-color: var(--bleu);
+  background-color: var(--cinq);
   border-radius: 0px;
 }
 .navbar{
@@ -57,31 +73,46 @@ a:hover{
   border: 0px;
 }
 .navbar-default .navbar-collapse{
-  background-color: var(--bleu);
+  background-color: var(--cinq);
   font-size: 1.2em;
+	border-bottom: var(--trois) solid 1px;
 }
 .navbar-default .navbar-nav > li > a{
-  color: white;
+  color: var(--quatre);
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
-  background-color: var(--vert);
-  color: #FFF;
+  background-color: var(--quatre);
+  color: var(--trois);
 }
 .navbar-default .navbar-brand{
-  color: #FFF;
+  color: var(--quatre);
 }
 .navbar-default .navbar-brand:hover{
-  color: var(--vert);
+  color: var(--trois);
 }
 .navbar-default .navbar-toggle:hover {
-    background-color: var(--vert);
+    background-color: var(--trois);
 }
 .navbar-default .navbar-toggle {
-    border-color: #FFF;
+    border-color: var(--un);
+}
+.navbar-nav>li>.dropdown-menu {
+	background-color: var(--quatre);
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
+	background-color: var(--quatre);
+		color: var(--trois);
+}
+.dropdown-menu>li>a{
+	color: white;
+}
+.dropdown-menu>li>a:hover{
+	background-color: var(--cinq);
+	color: var(--trois);
 }
 .well{
-	background-color: var(--bleuclair);
-	border: 1px solid var(--bleu);
+	background-color: var(--cinq);
+	border: 1px solid var(--quatre);
 	border-radius: 0px;
 }
 .footer{
@@ -91,8 +122,8 @@ a:hover{
 	padding: 10px;
 }
 .fa-trash-o{
-	color:var(--bleu);
+	color:var(--trois);
 }
 .fa-trash-o:hover{
-	color:var(--bleuclair);
+	color:var(--quatre);
 }

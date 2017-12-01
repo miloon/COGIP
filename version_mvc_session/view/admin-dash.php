@@ -41,6 +41,9 @@
     <a href="?newinvoice" type="button" class="btn btn-success"><i class="fa fa-plus fa-lg"></i> Nouvelle facture</a>
       <a href="?newcontact" type="button" class="btn btn-success"><i class="fa fa-plus fa-lg"></i> Nouveau contact</a>
         <a href="?newcompany" type="button" class="btn btn-success"><i class="fa fa-plus fa-lg"></i> Nouvelle société</a>
+       <?php if($_SESSION['autorisation']  == "godmode"){
+         ?><a href="?members" type="button" class="btn btn-success"><i class="fa fa-users fa-lg"></i> Admin - Membres</a><?php
+       }?>
         </p>
         <h2>Dernières factures</h2>
         <table class="table table-striped">

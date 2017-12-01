@@ -26,11 +26,17 @@
           <a href="?admin" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="?admin">Dashboard</a></li>
-            <li><a href="?newcompany">Nouvelle société</a></li>
-            <li><a href="?newcontact">Nouveau contact</a></li>
-            <li><a href="?newinvoice">Nouvelle facture</a></li>
+            <li><a href="?newcompany"><i class="fa fa-building"></i> Nouvelle société</a></li>
+            <li><a href="?newcontact"><i class="fa fa-user-plus"></i> Nouveau contact</a></li>
+            <li><a href="?newinvoice"><i class="fa fa-file"></i> Nouvelle facture</a></li>
+            <?php if($_SESSION['autorisation']  == "godmode"){
+              ?>
+              <li role="separator" class="divider"></li>
+              <li role="presentation"><a href="?register"><i class="fa fa-user-circle"></i> Membres</a></li>
+            <?php
+            }?>
             <li role="separator" class="divider"></li>
-            <li role="presentation"><a href="?deconnect">Déconnexion</a></li>
+            <li role="presentation"><a href="?deconnect"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
           </ul>
         </li>
                 <?php

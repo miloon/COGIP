@@ -1,4 +1,7 @@
 <?php
+/*
+https://github.com/becodeorg/BeCode/wiki/Backend---traiter-un-formulaire
+*/
 $title="Ajout d'une nouvelle facture";
 $query = "SELECT `nom_societe`, `id_societe` FROM `societes` ORDER BY nom_societe ASC;";
 $stmt = $pdo->query($query);

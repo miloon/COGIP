@@ -28,8 +28,8 @@
   </form>
 </div>
 </div>
-<p>Si vous n'êtes pas encore un utilisateur, veuillez vous enregistrer.</p>
-<a href="?register" class="btn btn-danger">S'enregistrer</a>
+<p>Si vous n'êtes pas encore un utilisateur, veuillez vous <a href="?register" class="btn btn-danger">enregistrer</a>.</p>
+
 <?php include("footer.php");?>
 <!-- insérer ici les scripts spécifiques à la page -->
 <?php include("scripts.php");?>

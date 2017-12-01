@@ -1,4 +1,8 @@
 <?php
+/*
+https://github.com/becodeorg/BeCode/wiki/Backend---traiter-un-formulaire
+*/
+
 $title="Ajout d'une nouvelle société";
 $query = "SELECT * FROM `type`";
 $stmt = $pdo->query($query);

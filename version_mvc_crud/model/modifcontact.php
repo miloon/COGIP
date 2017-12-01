@@ -1,4 +1,7 @@
 <?php
+/*
+https://github.com/becodeorg/BeCode/wiki/Backend---traiter-un-formulaire
+*/
 $query = "SELECT * FROM `personnes` WHERE `id_personne` = $idcontact";
 $contact = $pdo->query($query)->fetch();
 

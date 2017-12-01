@@ -1,4 +1,7 @@
 <?php
+/*
+https://github.com/becodeorg/BeCode/wiki/Backend---traiter-un-formulaire
+*/
 $query = "SELECT * FROM factures WHERE id_facture = $idfacture;";
 $invoice = $pdo->query($query)->fetch();
 

@@ -108,6 +108,14 @@ if(empty($_GET)){ // pas de variables get => ACCUEIL
   $iddeletecomp = (int)$_GET['delete_company'];
   // on lance la fonctionnalité de suppression depuis le fichier PHP contenant le script
   require_once 'model/supcomp.php';
+}elseif (isset($_GET['members'])){
+  require_once 'model/admin-members.php';
+  require_once 'view/admin-members.php';
+}elseif (isset($_GET['register'])){
+  // php nécessaire pour établir une connexion en tant que personne connectée
+  require_once "model/inscription.php";
+  // on affiche le formulaire
+  require_once "view/inscription.php";
 /*
 * Via la page suivante, on se déconnecte
 */
