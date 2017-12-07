@@ -1,54 +1,40 @@
-
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="./">COGIP</a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-          <li role="presentation"><a href="./">Accueil</a></li>
-          <li role="presentation"><a href="?factures">Factures</a></li>
-          <li role="presentation"><a href="?societes">Sociétés</a></li>
-          <li role="presentation"><a href="?annuaire">Annuaire</a></li>
-          <?php
-            // si on a une variable de session et qu'elle est valide
-            if(isset($_SESSION['id']) && $_SESSION['id']==session_id()) { ?>
-                <li role="presentation" class="dropdown">
-          <a href="?admin" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="?admin">Dashboard</a></li>
-            <li><a href="?newcompany"><i class="fa fa-building"></i> Nouvelle société</a></li>
-            <li><a href="?newcontact"><i class="fa fa-user-plus"></i> Nouveau contact</a></li>
-            <li><a href="?newinvoice"><i class="fa fa-file"></i> Nouvelle facture</a></li>
-            <?php if($_SESSION['autorisation']  == "godmode"){
-              ?>
-              <li role="separator" class="divider"></li>
-              <li role="presentation"><a href="?register"><i class="fa fa-user-circle"></i> Membres</a></li>
-            <?php
-            }?>
-            <li role="separator" class="divider"></li>
-            <li role="presentation"><a href="?deconnect"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
-          </ul>
-        </li>
-                <?php
-            }else{ ?>
-               <li role="presentation"><a href="?connect">Connexion</a></li>
-            <?php
-            }
-            ?>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="./">COGIP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link" href="./">Accueil</a></li>
+      <li class="nav-item"><a class="nav-link" href="?factures">Factures</a></li>
+      <li class="nav-item"><a class="nav-link" href="?societes">Sociétés</a></li>
+      <li class="nav-item"><a class="nav-link" href="?annuaire">Annuaire</a></li>
+      <?php
+        // si on a une variable de session et qu'elle est valide
+        if(isset($_SESSION['id']) && $_SESSION['id']==session_id()) { ?>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="?alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Admin
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="?newcompany"><i class="fa fa-building"></i> Nouvelle société</a>
+          <a class="dropdown-item" href="?newcontact"><i class="fa fa-user-plus"></i> Nouveau contact</a>
+          <a class="dropdown-item" href="?newinvoice"><i class="fa fa-file"></i> Nouvelle facture</a>
+            <?php if($_SESSION['autorisation']  == "godmode"){ ?>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="?register"><i class="fa fa-user-circle"></i> Membres</a>
+          <?php } ?>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="?deconnect"><i class="fa fa-sign-out"></i> Déconnexion</a>
+      </li>
+    <?php }else{ ?>
+    <li class="nav-item"><a class="nav-link" href="?connect">Connexion</a></li>
+    <?php } ?>
+    </ul>
+  </div>
 </nav>
-<div class="jumbotron hidden-sm hidden-xs">
+<!--jumbotron-->
+<div class="jumbotron">
   <h1>COGIP : département facturation</h1>
 </div>
+<!--fin menu.php-->

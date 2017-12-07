@@ -63,53 +63,30 @@ footer{
   color: var(--trois);
   border-radius: 0px;
 }
+.jumbotron{
+	padding: 1rem;
+}
 .footer, .container-fluid{
   background-color: var(--cinq);
   border-radius: 0px;
 }
-.navbar{
+/* Menu de navigation */
+.navbar {
+	background-color: var(--cinq);
   padding-bottom: 0px;
   margin-bottom: 0px;
   border: 0px;
 }
-.navbar-default .navbar-collapse{
-  background-color: var(--cinq);
-  font-size: 1.2em;
-	border-bottom: var(--trois) solid 1px;
-}
-.navbar-default .navbar-nav > li > a{
-  color: var(--quatre);
-}
-.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover{
-  background-color: var(--quatre);
-  color: var(--trois);
-}
-.navbar-default .navbar-brand{
-  color: var(--quatre);
-}
-.navbar-default .navbar-brand:hover{
-  color: var(--trois);
-}
-.navbar-default .navbar-toggle:hover {
-    background-color: var(--trois);
-}
-.navbar-default .navbar-toggle {
-    border-color: var(--un);
-}
-.navbar-nav>li>.dropdown-menu {
-	background-color: var(--quatre);
-}
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{
-	background-color: var(--quatre);
+.navbar-light .navbar-nav .nav-link{
+	background-color: var(--cinq);
 		color: var(--trois);
 }
-.dropdown-menu>li>a{
-	color: white;
+.navbar-light .navbar-brand{
+		color: var(--trois);
+		background-color: var(--cinq);
 }
-.dropdown-menu>li>a:hover{
-	background-color: var(--cinq);
-	color: var(--trois);
-}
+
+
 .well{
 	background-color: var(--cinq);
 	border: 1px solid var(--quatre);

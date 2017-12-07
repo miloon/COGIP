@@ -15,17 +15,18 @@
   <?php }
     ?>
     <!-- Formulaire de connexion -->
-  <form method="post" action="" class="well form">
-    <div class="form-group">
-      <label for="lelogin">Votre identifiant</label>
-      <input type="text" class="form-control" id="lelogin" name="lelogin" placeholder="identifiant">
-    </div>
-    <div class="form-group">
-      <label for="lepass">Votre mot de passe</label>
-      <input type="password" class="form-control" id="lepass" name="lepass" placeholder="mot de passe">
-    </div>
-    <button type="submit" class="btn btn-success">Submit</button>
-  </form>
+    <form method="post" action="">
+      <div class="form-group">
+        <label for="lelogin">Votre identifiant</label>
+        <input type="text" class="form-control" id="lelogin" name="lelogin" placeholder="identifiant">
+      </div>
+      <div class="form-group">
+        <label for="lepass">Mot de passe</label>
+        <input type="password" class="form-control" id="lepass" name="lepass" placeholder="mot de passe">
+      </div>
+
+      <button type="submit" class="btn btn-primary">Je m'identifie</button>
+    </form>
 </div>
 </div>
 <p>Si vous n'êtes pas encore un utilisateur, veuillez vous <a href="?register" class="btn btn-danger">enregistrer</a>.</p>
