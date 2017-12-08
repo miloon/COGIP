@@ -15,7 +15,7 @@ if(!empty($_POST)) {
 
     // Qu'y a-t-il dans la base de données ?
     $query = "SELECT u.id, u.identifiant AS identifiant, u.motdepasse AS motdepasse, a.autorisation AS autorisation FROM user u, acces a WHERE identifiant = '$lelogin' and u.fk_acces = a.id";
-  
+
 
     $utilisateur = $pdo->query($query)->fetch();
     $userregistered = $utilisateur['identifiant'];
@@ -25,6 +25,7 @@ if(!empty($_POST)) {
     if($userregistered==$lelogin && password_verify('$lepass', $pwdregistered)){
            // si c'est OK, création de session valide
            $_SESSION['id'] = session_id();
+           $_SESSION['idmember'] = $utilisateur['id'];
            $_SESSION['identifiant'] = $userregistered;
            $_SESSION['autorisation'] = $utilisateur['autorisation'];
            // redirection vers la page d'accueil de l'administration, et pas l'accueil normal

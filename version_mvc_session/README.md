@@ -1,10 +1,7 @@
 # COGIP version avec MVC
 
-À rajouter :
-- système d'inscription des utilisateurs
-- système de modification des profils
-- ajout de tables utilisateur et autorisation dans DB
-- système de [password_hash](https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql/tp-creer-un-espace-membres#/id/r-2178906)
+À améliorer :
+supmember.php => le message d'erreur si on tente de s'autosupprimer.
 
 ## Organisation des dossiers
 
@@ -57,7 +54,7 @@ Il n'y a pas de fichiers ``view`` pour les pages de suppression car elle n'affic
 - notion de suppression
 - de la sanitanization
 - de la vérification de formulaire basique en javascript
-- un design encore plus laid o//
+- un design un peu moins laid o//
 
 ## À ajouter ici ou dans la version avec droits d'administration
 - Ajout d'un sanitizer pour les dates de facture

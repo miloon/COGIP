@@ -1,12 +1,15 @@
 <?php
-/* on va supprimer la personne de contact en fonction de l'id qui a été envoyé en POST
-* si la transaction est réussie, l'utilisateur sera redirigé vers l'accueil admin.
-* sinon, l'erreur s'affiche et aucune des transactions ne sera effectuée (ici, il n'y en a qu'une)
+/*
+* On va vérifier qu'on ne s'auto supprime pas avant de supprimer le membre.
 */
-try {
-    $supprcontact = $pdo->exec("DELETE FROM user WHERE id= $iddeletemember;");
-    header("Location: ?members");
-}catch (Exception $e) {
-    echo "Erreur :".$e->getMessage();
-    die();
+if(!($iddeletemember == $_SESSION['idmember'])){
+  try {
+      $supprcontact = $pdo->exec("DELETE FROM user WHERE id= $iddeletemember;");
+      header("Location: ?members");
+  }catch (Exception $e) {
+      echo "Erreur :".$e->getMessage();
+      die();
+  }
+}else{
+  echo "Vous ne pouvez pas vous auto-supprimer !!!";
 }
