@@ -11,10 +11,10 @@
 * Avec la boîte de dialogue JS, il va confirmer que c'est bien l'élément qu'il souhaite supprimer
 * Il a aussi besoin de l'ID de l'élément pour pouvoir l'insérer dans la requête SQL de suppression.
 */
-    function confirmDeleteInv(nom, id) {
+    function confirmDeleteMember(nom, id) {
         var question = confirm("Voulez-vous vraiment supprimer le membre " + nom + " ?");
         if (question) {
-            document.location.href = "?delete_user=" + id;
+            document.location.href = "?supmember=" + id;
         }
     }
 </script>
@@ -38,7 +38,7 @@
             <tr>
               <td><a href="?modifmember=<?=$value['id']?>"><?=$value['identifiant']?></a></td>
               <td><?=$value['autorisation']?></td>
-              <td><i onmouseover="this.style.cursor='pointer';" onclick='confirmDeleteInv("<?=$value['identifiant']?>",<?=$value['id']?>)' class="fa fa-trash-o fa-lg"></i></a></td>
+              <td><i onmouseover="this.style.cursor='pointer';" onclick='confirmDeleteMember("<?=$value['identifiant']?>",<?=$value['id']?>)' class="fa fa-trash-o fa-lg"></i></a></td>
             </tr>
             <?php } ?>
           </table>

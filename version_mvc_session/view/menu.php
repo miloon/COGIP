@@ -24,7 +24,8 @@
           <a class="dropdown-item" href="?newinvoice"><i class="fa fa-file"></i> Nouvelle facture</a>
             <?php if($_SESSION['autorisation']  == "godmode"){ ?>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="?register"><i class="fa fa-user-circle"></i> Membres</a>
+            <a class="dropdown-item" href="?members"><i class="fa fa-user-circle"></i> Membres</a>
+            <a class="dropdown-item" href="?register"><i class="fa fa-user-plus"></i> Ajouter un membre</a>
           <?php } ?>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="?deconnect"><i class="fa fa-sign-out"></i> Déconnexion</a>

@@ -118,6 +118,11 @@ if(empty($_GET)){ // pas de variables get => ACCUEIL
   $modifmember = (int)$_GET['modifmember'];
   require_once 'model/modifmember.php';
   require_once 'view/modifmember.php';
+}elseif(isset($_GET['supmember']) &&  is_numeric($_GET['supmember'])){
+  // conversion en variable locale en int
+  $iddeletemember = (int)$_GET['supmember'];
+  // on lance la fonctionnalité de suppression depuis le fichier PHP contenant le script
+  require_once 'model/supmember.php';
 }elseif (isset($_GET['register'])){
   // php nécessaire pour établir une connexion en tant que personne connectée
   require_once "model/inscription.php";

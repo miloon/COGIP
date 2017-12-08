@@ -11,11 +11,12 @@
     <h2>Modification de l'accès de <?=$member['identifiant']?></h2>
     <form action="" method="post" class="well form">
       <div class="row">
-        <div class="form-group col-md-12">
-          <label for="identifiant">Nom</label>
+        <div class="form-group col-md-6">
+          <label for="identifiant">Identifiant</label>
           <input type="text" class="form-control champ" id="identifiant" name="identifiant" value="<?=$member['identifiant']?>" required>
         </div>
-        <div class="form-group col-md-12">
+        <div class="form-group col-md-6">
+          <label for="identifiant">Type d'autorisation</label>
           <select id="autorisation" name="autorisation" class="form-control">
             <?php foreach ($acces as $key => $value){
               if ($value['id'] == $member['acces']) {
@@ -26,10 +27,13 @@
               <?php $selected="";
              } ?>
             </select>
+        </div>
+        <div class="col-md-12">
+          <button type="submit" name="envoyer" class="btn btn-success">Submit</button>
+        </div>
       </div>
-
-      <button type="submit" name="envoyer" class="btn btn-success">Submit</button>
     </form>
+
     <?php include("footer.php");?>
     <!-- insérer ici les scripts spécifiques à la page -->
     <script type="text/javascript">

@@ -15,7 +15,7 @@ if(!empty($_POST)){
     $pdo->beginTransaction();
     $pdo->exec("UPDATE `user` SET`identifiant`='$identifiant',`fk_acces`=$autorisation WHERE id = $modifmember");
     $pdo->commit();
-    $reponse = $identifiant. " a bien été modifié.";
+    $reponse = $identifiant. " a bien été modifié. <a href='?members'>Retour au panneau d'administration</a>.";
   } catch (Exception $e) {
     $pdo->rollBack();
     echo "Échec : " . $e->getMessage();
