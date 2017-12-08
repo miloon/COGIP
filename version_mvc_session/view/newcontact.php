@@ -10,7 +10,7 @@
   <p><?=$reponse?></p>
 <?php } ?>
 <h2>Nouveau contact</h2>
-<form action="" method="post" class="well form">
+<form action="" method="post">
   <div class="row">
   <div class="form-group col-md-6">
     <label for="nom_personne">Nom</label>

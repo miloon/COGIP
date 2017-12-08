@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 21, 2017 at 03:42 PM
+-- Generation Time: Dec 08, 2017 at 03:16 PM
 -- Server version: 5.7.20-0ubuntu0.16.04.1
 -- PHP Version: 7.0.22-0ubuntu0.16.04.1
 
@@ -173,7 +173,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `identifiant`, `motdepasse`, `fk_acces`) VALUES
-(1, 'Jean-Christian', '$2y$10$vj8EC78I1sDbXeOoPE8HSe4zkDPctKKAHjCwdO4mommxdpl17ve.m', 4);
+(1, 'Jean-Christian', '$2y$10$vj8EC78I1sDbXeOoPE8HSe4zkDPctKKAHjCwdO4mommxdpl17ve.m', 4),
+(3, 'Muriel', '$2y$10$NpcXF4dNjZ6wScn5lXlyL.5.zsBctWVcTMXgdRlRgptFQ48Qu2WQq', 2),
+(4, 'Jean-Michel', '$2y$10$SeJBzo.XsRaMHKjK03dpLO3AKTAddyKhMFE4BmhwQI7C5DL5/2De.', 2),
+(5, 'Gilles', '$2y$10$/aheba1VNioY/.n60r70ze3K0oA7PEGJuvHa3zOPVZvbgKH9h2F06', 2);
 
 --
 -- Indexes for dumped tables
@@ -249,7 +252,7 @@ ALTER TABLE `type`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -12,15 +12,17 @@
   <p><?=$reponse?></p>
 <?php } ?>
 <h2>Nouvelle facture</h2>
-<form action="" method="post" class="well form">
+<form action="" method="post">
   <div class="form-group">
-    <label for="numeroinv">Numéro de facture</label> Format YYYYMMDDnumero
-    <input type="text" class="form-control champ" id="numeroinv" name="numeroinv" placeholder="numéro de facture" required>
+    <label for="numeroinv">Numéro de facture</label>
+    <small class="form-text text-muted">Format YYYYMMDDnumero</small>
+    <input type="text" class="form-control" id="numeroinv" aria-describedby="emailHelp" placeholder="numéro de facture" required>
   </div>
 
   <div class="form-group">
-    <label for="datetimepicker">Date de la facture</label> Format YYYY-MM-DD
-    <input type="date" class="form-control champ" id="datetimepicker" name="dateinv" placeholder="date de facture" required>
+    <label for="datetimepicker">Date de la facture</label>
+    <small class="form-text text-muted">Format YYYY-MM-DD</small>
+    <input type="date" class="form-control" id="datetimepicker" name="dateinv" placeholder="date de facture" required>
   </div>
 <div class="row">
   <div class="form-group col-md-6">

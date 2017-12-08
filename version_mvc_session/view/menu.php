@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
   <a class="navbar-brand" href="./">COGIP</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -13,10 +13,12 @@
         // si on a une variable de session et qu'elle est valide
         if(isset($_SESSION['id']) && $_SESSION['id']==session_id()) { ?>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="?alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a href="#" class="nav-link dropdown-toggle" href="?alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Admin
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="?admin"><i class="fa fa-unlock"></i> Administration</a>
+          <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="?newcompany"><i class="fa fa-building"></i> Nouvelle société</a>
           <a class="dropdown-item" href="?newcontact"><i class="fa fa-user-plus"></i> Nouveau contact</a>
           <a class="dropdown-item" href="?newinvoice"><i class="fa fa-file"></i> Nouvelle facture</a>

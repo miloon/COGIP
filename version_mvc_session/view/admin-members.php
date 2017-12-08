@@ -36,7 +36,7 @@
           </tr>
           <?php foreach ($members as $key => $value){?>
             <tr>
-              <td><a href="?modifuser=<?=$value['id']?>"><?=$value['identifiant']?></a></td>
+              <td><a href="?modifmember=<?=$value['id']?>"><?=$value['identifiant']?></a></td>
               <td><?=$value['autorisation']?></td>
               <td><i onmouseover="this.style.cursor='pointer';" onclick='confirmDeleteInv("<?=$value['identifiant']?>",<?=$value['id']?>)' class="fa fa-trash-o fa-lg"></i></a></td>
             </tr>

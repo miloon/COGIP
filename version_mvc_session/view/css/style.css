@@ -4,7 +4,6 @@
 	--trois: #843B62;
 	--quatre: #F67E7D;
 	--cinq: #F3E8EE;
-
 	--font: 'Slabo 27px', serif;
 }
 
@@ -27,13 +26,15 @@ a{
 a:hover{
   color: var(--trois);
 }
-footer{
+footer .navbar{
 	background-color: var(--cinq);
 }
+
 .text-muted {
     color: var(--trois);
 		margin:0;
 }
+/* Boutons */
 .btn-success {
     color: #fff;
     background-color: var(--deux);
@@ -59,7 +60,6 @@ footer{
 }
 
 .container .jumbotron{
-  background-color: var(--cinq);
   color: var(--trois);
   border-radius: 0px;
 }
@@ -79,18 +79,25 @@ footer{
 }
 .navbar-light .navbar-nav .nav-link{
 	background-color: var(--cinq);
-		color: var(--trois);
+	color: var(--deux);
 }
 .navbar-light .navbar-brand{
-		color: var(--trois);
-		background-color: var(--cinq);
+	color: var(--deux);
+	background-color: var(--cinq);
+}
+.dropdown-item{
+	color: var(--deux);
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	color: var(--quatre);
 }
 
 
-.well{
+form {
 	background-color: var(--cinq);
 	border: 1px solid var(--quatre);
-	border-radius: 0px;
+	margin-bottom: 15px;
+	padding: 15px;
 }
 .footer{
 	position: relative;
@@ -98,6 +105,7 @@ footer{
 	line-height: 30px;
 	padding: 10px;
 }
+/* Font Awesome */
 .fa-trash-o{
 	color:var(--trois);
 }

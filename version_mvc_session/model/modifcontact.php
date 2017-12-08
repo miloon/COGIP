@@ -21,7 +21,6 @@ if(!empty($_POST)){
   } catch (Exception $e) {
     $pdo->rollBack();
     echo "Échec : " . $e->getMessage();
-    echo $telephone;
   }
 }
 $title="Modification de ".$contact['prenom_personne']." ".$contact['nom_personne'];

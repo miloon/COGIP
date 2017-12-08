@@ -108,9 +108,16 @@ if(empty($_GET)){ // pas de variables get => ACCUEIL
   $iddeletecomp = (int)$_GET['delete_company'];
   // on lance la fonctionnalité de suppression depuis le fichier PHP contenant le script
   require_once 'model/supcomp.php';
+  /*
+  * Administration des membres qui ont accès au programme de la COGIP
+  */
 }elseif (isset($_GET['members'])){
   require_once 'model/admin-members.php';
   require_once 'view/admin-members.php';
+}elseif (isset($_GET['modifmember']) &&  is_numeric($_GET['modifmember'])){
+  $modifmember = (int)$_GET['modifmember'];
+  require_once 'model/modifmember.php';
+  require_once 'view/modifmember.php';
 }elseif (isset($_GET['register'])){
   // php nécessaire pour établir une connexion en tant que personne connectée
   require_once "model/inscription.php";

@@ -10,7 +10,7 @@
     <p><?=$reponse?></p>
     <?php } ?>
     <h2>Nouvelle société</h2>
-    <form id="formulaire" action="" method="post" class="well form">
+    <form id="formulaire" action="" method="post">
       <div class="form-group">
         <label for="nomsociete">Nom de la société</label>
         <input type="text" class="form-control champ" id="nomsociete" name="nomsociete" placeholder="Nom de la société" required>
