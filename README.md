@@ -28,6 +28,7 @@ Dans chaque version, il y a un fichier ``cogip.sql`` qui contient la structure e
 
 ## Ce qu'il n'y a pas (encore) dans ce repo
 - plus de commentaires et éventuellement des liens vers des ressources
-- un système de tri pour les tableaux (je ne sais pas encore avec quelle techno, peut-être Angula)
+- un système de tri pour les tableaux (je ne sais pas encore avec quelle techno, peut-être Angular)
 - un script pour sanitizer les dates en php
 - système de session avec autorisations différentes (droits d'administration) selon l'utilisateur connecté
+- de l'orienté objet 
