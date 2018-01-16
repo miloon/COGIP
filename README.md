@@ -27,7 +27,6 @@ Puis j'ai décidé de continuer ce site en ajoutant, au fur et à mesure, des fo
 Dans chaque version, il y a un fichier ``cogip.sql`` qui contient la structure et les données de la base de données qui s'appelle cogip. Dans la version_no_mvc, le fichier se trouve à la racine. Dans la version_mvc, il se trouve dans le dossier model.
 
 ## Ce qu'il n'y a pas (encore) dans ce repo
-- plus de commentaires et éventuellement des liens vers des ressources
 - un système de tri pour les tableaux (je ne sais pas encore avec quelle techno, peut-être Angular)
 - un script pour sanitizer les dates en php
 - système de session avec autorisations différentes (droits d'administration) selon l'utilisateur connecté
