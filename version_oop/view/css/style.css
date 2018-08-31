@@ -1,0 +1,114 @@
+:root {
+	--un: #022B3A;
+	--deux: #1F7A8C;
+	--trois: #843B62;
+	--quatre: #F67E7D;
+	--cinq: #F3E8EE;
+	--font: 'Slabo 27px', serif;
+}
+
+body{
+  font-family: sans-serif;
+  color: black;
+  background-color: var(--cinq);
+}
+.container{
+	background-color: white;
+	border: var(--trois) solid 1px;
+}
+h1, h2, h3{
+  font-family: var(--font);
+  color: var(--trois);
+}
+a{
+  color: var(--deux);
+}
+a:hover{
+  color: var(--trois);
+}
+footer .navbar{
+	background-color: var(--cinq);
+}
+
+.text-muted {
+    color: var(--trois);
+		margin:0;
+}
+/* Boutons */
+.btn-success {
+    color: #fff;
+    background-color: var(--deux);
+    border-color: var(--un);
+}
+.btn-success:hover {
+    color:  var(--deux);
+    background-color: var(--cinq);
+    border-color: var(--deux);
+}
+.btn-danger {
+    color: #fff;
+    background-color: var(--quatre);
+    border-color: var(--trois);
+}
+.btn-danger:hover {
+    color: var(--quatre);
+    background-color: var(--cinq);
+    border-color: var(--quatre);
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+  border-top: solid 1px var(--quatre);
+}
+
+.container .jumbotron{
+  color: var(--trois);
+  border-radius: 0px;
+}
+.jumbotron{
+	padding: 1rem;
+}
+.footer, .container-fluid{
+  background-color: var(--cinq);
+  border-radius: 0px;
+}
+/* Menu de navigation */
+.navbar {
+	background-color: var(--cinq);
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  border: 0px;
+}
+.navbar-light .navbar-nav .nav-link{
+	background-color: var(--cinq);
+	color: var(--deux);
+}
+.navbar-light .navbar-brand{
+	color: var(--deux);
+	background-color: var(--cinq);
+}
+.dropdown-item{
+	color: var(--deux);
+}
+.dropdown-item:focus, .dropdown-item:hover{
+	color: var(--quatre);
+}
+
+
+form {
+	background-color: var(--cinq);
+	border: 1px solid var(--quatre);
+	margin-bottom: 15px;
+	padding: 15px;
+}
+.footer{
+	position: relative;
+	bottom: 0;
+	line-height: 30px;
+	padding: 10px;
+}
+/* Font Awesome */
+.fa-trash-o{
+	color:var(--trois);
+}
+.fa-trash-o:hover{
+	color:var(--quatre);
+}
