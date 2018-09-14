@@ -29,3 +29,7 @@
 ``menu.php``, ``header.php``, ``footer.php`` : Ce sont des fichiers qui regroupent du code HTML à intégrer dans les différentes pages web. Les noms des fichiers sont tout de même assez explicites. RAPPEL : Comme le contenu sera identique sur toutes les pages, on regroupe le contenu sur un fichier unique qu'on appelle à un endroit précis de la page HTML à afficher. Dans le ``header.php``, o.n fait un appel à la variable ``$title`` qui est différente selon la page chargée.
 
 ``tous les autres fichiers`` : Dans la partie ``View``, il s'agira de coder la partie HTML qui s'affichera en plaçant aux bons endroits les boucles et les variables PHP contenant les données à afficher (et comme c'est trop long à écrire, j'appellerai ça des *variables d'affichage*).
+
+## Beauté
+
+![](cogip-minitel-mvc.gif)
