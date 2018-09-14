@@ -56,3 +56,7 @@ Il n'y a pas de fichiers ``view`` pour les pages de suppression car elle n'affic
 ## À ajouter ici ou dans la version avec droits d'administration
 - Ajout d'un sanitizer pour les dates de facture
 - Un système de tri pour les tableaux.
+
+## Beauté
+
+![](cogip-minitel-mvc-crud.gif)
